@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KromaFrame AI Studio — Luxury AI Product Video Commercials</title>
+  <meta name="description" content="Cinema-grade AI product video commercials for luxury watches, perfume, skincare, and e-commerce brands. DaVinci Resolve Studio color grading, -14 LUFS Foley SFX, and EN/FR/AR voiceovers." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <img src="assets/logo.png" alt="KromaFrame AI Studio Logo" class="brand-logo" />
+        <div>
+          <span class="brand-name">KromaFrame</span>
+          <span class="brand-sub">AI COMMERCIAL STUDIO</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#showreel" data-i18n="nav_showreel">Showreel</a>
+        <a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a>
+        <a href="#pipeline" data-i18n="nav_pipeline">Pipeline</a>
+        <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switcher" role="group" aria-label="Language Switcher">
+          <button type="button" class="lang-btn active" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="fr">FR</button>
+          <button type="button" class="lang-btn" data-lang="ar">AR</button>
+        </div>
+        <a href="https://www.fiverr.com/kromaframe_ai" target="_blank" rel="noopener" class="btn btn-gold nav-cta" data-i18n="nav_cta">Order on Fiverr</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="badge" data-i18n="hero_badge">AI CINEMATOGRAPHY + HUMAN FINISHING</span>
+          <h1 data-i18n="hero_title">Turn One Product Photo Into a Cinema-Grade Commercial</h1>
+          <p class="hero-desc" data-i18n="hero_desc">
+            We transform standard product photography into scroll-stopping video ads for Shopify, Amazon, TikTok, and luxury campaigns—finished in DaVinci Resolve Studio with -14 LUFS broadcast Foley sound design and native EN / FR / AR voiceovers.
+          </p>
+          <div class="hero-ctas">
+            <a href="https://www.fiverr.com/kromaframe_ai" target="_blank" rel="noopener" class="btn btn-gold" data-i18n="hero_cta_primary">Order on Fiverr (From $25)</a>
+            <a href="mailto:kromaframeai.studio@gmail.com?subject=KromaFrame%20AI%20Studio%20-%20Commercial%20Inquiry" class="btn btn-outline" data-i18n="hero_cta_secondary">Direct Studio Inquiry</a>
+          </div>
+          <div class="trust-bar">
+            <div class="trust-item">
+              <strong>24–48h</strong>
+              <span data-i18n="trust_turnaround">Fast Turnaround</span>
+            </div>
+            <div class="trust-item">
+              <strong>-14 LUFS</strong>
+              <span data-i18n="trust_audio">Broadcast Foley SFX</span>
+            </div>
+            <div class="trust-item">
+              <strong>EN / FR / AR</strong>
+              <span data-i18n="trust_lang">Native Voiceovers</span>
+            </div>
+            <div class="trust-item">
+              <strong>100%</strong>
+              <span data-i18n="trust_label">Label &amp; Logo Lock</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-reel" id="showreel">
+          <div class="reel-frame">
+            <video id="heroVideo" controls preload="metadata" poster="assets/posters/showreel_poster.jpg" playsinline>
+              <source src="assets/videos/showreel.mp4" type="video/mp4" />
+            </video>
+            <div class="reel-caption">
+              <span class="dot"></span>
+              <span data-i18n="reel_caption">28s Official Studio Showreel • 1080p • Mastered -14 LUFS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-i18n="port_eyebrow">SPEC COMMERCIAL SHOWCASE</span>
+            <h2 data-i18n="port_title">6 Flagship Commercial Productions</h2>
+          </div>
+          <div class="filter-bar" role="group" aria-label="Portfolio Filter">
+            <button type="button" class="filter-btn active" data-filter="all" data-i18n="filter_all">All (6)</button>
+            <button type="button" class="filter-btn" data-filter="luxury" data-i18n="filter_luxury">Luxury</button>
+            <button type="button" class="filter-btn" data-filter="ecommerce" data-i18n="filter_ecom">E-Commerce</button>
+            <button type="button" class="filter-btn" data-filter="tech" data-i18n="filter_tech">Tech &amp; Lifestyle</button>
+          </div>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid"></div>
+      </div>
+    </section>
+
+    <!-- PIPELINE -->
+    <section class="section section-alt" id="pipeline">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow" data-i18n="pipe_eyebrow">ZERO GLITCHES. ZERO RAW AI SLOP.</span>
+          <h2 data-i18n="pipe_title">4-Stage Boutique Cinema Pipeline</h2>
+        </div>
+        <div class="pipeline-grid">
+          <article class="pipe-card">
+            <span class="pipe-num">01</span>
+            <h3 data-i18n="pipe_1_t">Studio Relighting &amp; Label Lock</h3>
+            <p data-i18n="pipe_1_d">Your real product photo is placed in obsidian, marble, or liquid-gold studio sets while preserving your exact logo, bottle geometry, and typography.</p>
+          </article>
+          <article class="pipe-card">
+            <span class="pipe-num">02</span>
+            <h3 data-i18n="pipe_2_t">Cinema Motion Direction</h3>
+            <p data-i18n="pipe_2_d">Macro lens sweeps, dramatic rim-lit reveals, slow-motion mist or splash physics, and exploded mechanical views engineered to stop the scroll in 3 seconds.</p>
+          </article>
+          <article class="pipe-card">
+            <span class="pipe-num">03</span>
+            <h3 data-i18n="pipe_3_t">DaVinci Resolve Studio Finishing</h3>
+            <p data-i18n="pipe_3_d">Bespoke film color grading, shot-to-shot exposure matching, clean motion typography, and a razor-sharp transparent-logo End Card.</p>
+          </article>
+          <article class="pipe-card">
+            <span class="pipe-num">04</span>
+            <h3 data-i18n="pipe_4_t">Broadcast Foley &amp; Native VO</h3>
+            <p data-i18n="pipe_4_d">Custom Foley sound effects (glass clinks, mechanical ticks, velvet whooshes) mastered to -14 LUFS, plus optional ElevenLabs studio voiceovers in EN / FR / AR.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING & SERVICES -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow" data-i18n="price_eyebrow">TRANSPARENT STUDIO TIERS</span>
+          <h2 data-i18n="price_title">Packages &amp; Specialized Fiverr Services</h2>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="price-card">
+            <div class="price-tier" data-i18n="tier_1_name">Basic — Luxury Reveal</div>
+            <div class="price-val">$25</div>
+            <ul>
+              <li data-i18n="tier_1_f1">10-second commercial (2–3 hero shots)</li>
+              <li data-i18n="tier_1_f2">1080p HD (9:16, 16:9, or 1:1)</li>
+              <li data-i18n="tier_1_f3">DaVinci Resolve color grade + End Card</li>
+              <li data-i18n="tier_1_f4">Broadcast Foley SFX (-14 LUFS)</li>
+              <li data-i18n="tier_1_f5">2-day delivery • 1 revision</li>
+            </ul>
+            <a href="https://www.fiverr.com/kromaframe_ai" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="tier_cta">Select Basic</a>
+          </div>
+
+          <div class="price-card featured">
+            <div class="popular-tag" data-i18n="tier_popular">MOST POPULAR</div>
+            <div class="price-tier" data-i18n="tier_2_name">Standard — Signature Spot</div>
+            <div class="price-val">$55</div>
+            <ul>
+              <li data-i18n="tier_2_f1">20-second commercial (4–5 dynamic shots)</li>
+              <li data-i18n="tier_2_f2">1080p HD + 3 USP kinetic callouts</li>
+              <li data-i18n="tier_2_f3">Advanced film LUT + custom glow</li>
+              <li data-i18n="tier_2_f4">Multi-layer Foley SFX + music bed</li>
+              <li data-i18n="tier_2_f5">3-day delivery • 2 revisions</li>
+            </ul>
+            <a href="https://www.fiverr.com/kromaframe_ai" target="_blank" rel="noopener" class="btn btn-gold" data-i18n="tier_cta_std">Select Standard</a>
+          </div>
+
+          <div class="price-card">
+            <div class="price-tier" data-i18n="tier_3_name">Premium — Flagship Campaign</div>
+            <div class="price-val">$110</div>
+            <ul>
+              <li data-i18n="tier_3_f1">30-second full ad + 2 extra 3s hooks</li>
+              <li data-i18n="tier_3_f2">4K / 1080p in 2 aspect ratios</li>
+              <li data-i18n="tier_3_f3">Full cinema grade + animated End Card</li>
+              <li data-i18n="tier_3_f4">Studio voiceover (EN, FR, or AR)</li>
+              <li data-i18n="tier_3_f5">4-day delivery • 3 revisions</li>
+            </ul>
+            <a href="https://www.fiverr.com/kromaframe_ai" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="tier_cta_prm">Select Premium</a>
+          </div>
+        </div>
+
+        <div class="services-grid">
+          <a href="https://www.fiverr.com/kromaframe_ai/create-a-luxury-ai-product-video-commercial-for-watches-perfume-or-jewelry" target="_blank" rel="noopener" class="service-card">
+            <span class="srv-tag">GIG 01</span>
+            <h3 data-i18n="srv_1_t">Luxury Watches, Perfume &amp; Jewelry</h3>
+            <p data-i18n="srv_1_d">Obsidian, marble, and liquid-gold studio commercials with macro precision.</p>
+          </a>
+          <a href="https://www.fiverr.com/kromaframe_ai/create-high-converting-ai-product-video-ads-for-shopify-amazon-and-tiktok" target="_blank" rel="noopener" class="service-card">
+            <span class="srv-tag">GIG 02</span>
+            <h3 data-i18n="srv_2_t">Shopify, Amazon &amp; TikTok Video Ads</h3>
+            <p data-i18n="srv_2_d">3-second scroll-stopper hooks, USP callouts, and conversion pacing.</p>
+          </a>
+          <a href="https://www.fiverr.com/kromaframe_ai/color-grade-edit-and-add-foley-sound-design-to-your-raw-ai-video-ads" target="_blank" rel="noopener" class="service-card">
+            <span class="srv-tag">GIG 03</span>
+            <h3 data-i18n="srv_3_t">DaVinci Resolve Polish for Raw AI Ads</h3>
+            <p data-i18n="srv_3_d">Color matching, glitch cleanup, speed ramps, and -14 LUFS Foley audio.</p>
+          </a>
+          <a href="https://www.fiverr.com/kromaframe_ai/create-multilingual-en-fr-ar-ai-product-video-ads-with-pro-voiceover" target="_blank" rel="noopener" class="service-card">
+            <span class="srv-tag">GIG 04</span>
+            <h3 data-i18n="srv_4_t">Multilingual EN / FR / AR Campaigns</h3>
+            <p data-i18n="srv_4_d">One commercial localized natively with studio voiceovers and clean RTL/LTR titles.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCLOSURE & FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container faq-wrap">
+        <div class="disclosure-box">
+          <strong data-i18n="disc_t">Transparent AI + Human Studio Disclosure</strong>
+          <p data-i18n="disc_d">
+            We combine generative AI cinematography and licensed ElevenLabs studio voices with hands-on human creative direction, DaVinci Resolve Studio color grading, editorial pacing, and bespoke Foley sound design—compliant with Fiverr and EU AI Act transparency standards.
+          </p>
+        </div>
+
+        <h2 class="faq-heading" data-i18n="faq_title">Frequently Asked Questions</h2>
+        <div class="faq-list" id="faqList"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong class="gold">KromaFrame AI Studio</strong>
+        <p data-i18n="foot_sub">Boutique AI Product Video Commercials &amp; Cinema Post-Production</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.fiverr.com/kromaframe_ai" target="_blank" rel="noopener">Fiverr (@kromaframe_ai)</a>
+        <a href="mailto:kromaframeai.studio@gmail.com">kromaframeai.studio@gmail.com</a>
+      </div>
+      <div class="copyright">© 2026 KromaFrame AI Studio.</div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="modal" id="videoModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <video id="modalVideo" controls playsinline></video>
+      <div class="modal-meta">
+        <div>
+          <span class="srv-tag" id="modalCat"></span>
+          <h3 id="modalTitle"></h3>
+          <p id="modalDesc"></p>
+        </div>
+        <a href="https://www.fiverr.com/kromaframe_ai" target="_blank" rel="noopener" class="btn btn-gold" data-i18n="modal_cta">Order Similar Commercial</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
